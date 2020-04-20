@@ -1,0 +1,24 @@
+-- Flex-direction  主轴的方向
+      -flex item默认是从主轴（main axis）从main start 到 main end 方向布局
+      -flex-direction决定了主轴的方向
+       flex-direction:  row (默认)
+                        row-reverse(主轴方向反转)
+                        column(主轴更改为列)
+                        column-reverse(主轴更改为列，同时反转--从下往上排布)
+
+-- justify-content  
+        - 决定flex-item在主轴上对齐方式
+        - justify-content： flex-end(从axis的end方向上对齐)
+                            center（居中）
+                            space-between(首尾贴住start和end，其余空间均分)
+                            space-evenly（所有空白空间均分）
+                            space-around（两边空白只为其余空白的一般）
+
+-- align-items  
+        - 决定flex-item在交叉轴上对齐方式
+        align-items:  normal (效果同stretch)
+                      stretch （拉伸内容高度至交叉轴的长度）
+                      flex-start （开始位置对齐）
+                      flex-end  （结束位置对齐）
+                      center（居中）
+                      baseline（以第一行文本的基线对齐）

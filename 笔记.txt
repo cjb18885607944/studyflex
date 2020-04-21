@@ -22,3 +22,44 @@
                       flex-end  （结束位置对齐）
                       center（居中）
                       baseline（以第一行文本的基线对齐）
+
+--  flex-wrap
+        - 默认情况下，flex-item都会在同一行显示，装不下会压缩宽度
+        - flex-wrap： wrap （一行装不下，就换行）
+                      no-wrap（默认，不换行）
+                      wrap-reverse（换行，反转）
+
+--  flex-flow
+        - flex-direction和flex-wrap的缩写属性
+
+--  align-content
+        - 决定多行flex-items在交叉轴上的对齐方式
+        - align-content：stretch（拉伸）
+                         space-between(首尾贴住start和end，其余空间均分)
+                         space-evenly（所有空白空间均分）
+                         space-around（两边空白只为其余空白 的一般）
+                         flex-start （开始位置对齐）
+                         flex-end  （结束位置对齐）
+                         center（居中）
+                         
+-- order
+        - 排序
+        - 可设置整数，负整数，0.值越小排在前面
+
+-- align-self
+        - 覆盖flex-container设置的align-items
+
+-- flex-grow 成长
+        - flex-grow: 值（正小数，和大于一的数）
+        - 按设置的数字比值，将剩余的宽度按比例分开
+
+-- flex-shirnk 收缩
+        - 将超出的空间，按设置的数字比例收缩
+
+-- flex-basis
+        - 决定主轴方向上item的宽度大小
+
+-- flex
+        - flex-grow  flex-shirnk    flex-basis的缩写
+        - 无单位数，当做flex-grow
+        - 有效宽度值，当做flex-basis
